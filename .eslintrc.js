@@ -2,35 +2,39 @@ module.exports = {
   env: {
     es6: true,
     browser: true,
-    es2021: true,
+    es2021: true
   },
   extends: [
     "eslint:recommended",
     "plugin:react/recommended",
     "airbnb-base",
-    "prettier",
+    "prettier"
   ],
   overrides: [],
   parserOptions: {
     ecmaVersion: "latest",
-    sourceType: "module",
+    sourceType: "module"
   },
   plugins: ["react", "prettier", "simple-import-sort"],
   rules: {
     indent: ["error", 2],
     "linebreak-style": ["error", "windows"],
     quotes: ["error", "double"],
-    semi: ["error", "always"],
+    // semi: ["error", "always"],
     "prettier/prettier": [
       "error",
       {
-        endOfLine: "auto",
-        trailingComma: "es5",
+        trailingComma: "none",
+        singleQuote: false,
+        printWidth: 80,
         tabWidth: 2,
         semi: true,
-        singleQuote: false,
         parser: "flow",
+        endOfLine: "auto"
       },
-    ],
-  },
+      {
+        usePrettierrc: false
+      }
+    ]
+  }
 };
