@@ -46,3 +46,4 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 To learn React, check out the [React documentation](https://reactjs.org/).
 # reduxtemp
 # batch-2---assignment-7---job-finder-Soab42
+# batch-2---final-exam---edtech-platform-Soab42
